@@ -1,14 +1,28 @@
-html, body, main, article {
+html,
+body,
+main,
+article {
     min-height: 100%;
     height: 100%;
 }
 
-#app {
+main {
+    min-height: 100%;
+    top: 62px;
+    position: relative;
+}
+
+#app,
+.page {
     min-height: 100%;
     height: 100%;
 }
 
 .navbar-toggler {
+    border: 0;
+}
+
+.collapsed {
     border: 0;
 }
 
@@ -20,11 +34,55 @@ html, body, main, article {
     font-size: x-large;
 }
 
-.s-nav-top .nav-link, .s-nav-top .dropdown-item {
+.s-nav-top .nav-link,
+.s-nav-top .dropdown-item {
     font-size: medium;
     padding-left: 1rem;
 }
 
-.s-nav-top .nav-link, .s-nav-top .navbar-brand {
+.s-nav-top .nav-link,
+.s-nav-top .navbar-brand,
+.s-nav-top .navbar-toggler,
+.navbar-toggler-icon {
     color: white !important;
+}
+
+#btn-hide-side-bar {
+    display: none;
+    color: white;
+}
+
+@media (min-width:767px) {
+    #btn-hide-side-bar {
+        display: block;
+    }
+
+    .s-side-bar {
+        position: fixed;
+        top: 62px;
+        background-color: rgba(234, 234, 234, 0.74);
+        min-height: 100%;
+        align-items: start;
+        border-right: 2;
+        border: black;
+        width: 280px;
+        max-width: 280px;
+        min-width: 280px;
+        border-right:1px solid gray;
+    }
+
+    .s-side-bar .nav-link,
+    .s-side-bar .navbar-brand {
+        color: black !important;
+        padding-left: 1rem;
+        font-size: medium;
+    }
+
+    .main-margin-left {
+        margin-left: 280px;
+    }
+
+    .hidden-navSide {
+        clip: rect(0, 0, 0, 0) !important;
+    }
 }
