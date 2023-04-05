@@ -1,0 +1,30 @@
+html, body, main, article {
+    min-height: 100%;
+    height: 100%;
+}
+
+#app {
+    min-height: 100%;
+    height: 100%;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+
+.s-nav-top {
+    background-image: linear-gradient(180deg, rgb(50, 107, 213) 0%, #007bff 80%);
+}
+
+.s-nav-top .navbar-brand {
+    font-size: x-large;
+}
+
+.s-nav-top .nav-link, .s-nav-top .dropdown-item {
+    font-size: medium;
+    padding-left: 1rem;
+}
+
+.s-nav-top .nav-link, .s-nav-top .navbar-brand {
+    color: white !important;
+}
